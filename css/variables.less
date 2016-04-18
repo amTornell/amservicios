@@ -1,0 +1,74 @@
+/*******
+	colores
+********/
+
+@acento: 	    #00347D;
+@base: 		    #656565;
+@red:         #d0021b;
+@bluelight:   #1553A8;
+@white:       #fff;
+
+
+
+/*******
+ clases utiles
+********/
+
+.left{
+  float: left;
+}
+.right{
+  float: right;
+}
+.float-none{
+  float: none;
+}
+.clear{
+  clear: both;
+}
+.item-centered{
+  display: block;
+  margin: 0 auto;
+}
+.text-centered{
+  text-align: center;
+}
+.text-right{
+  text-align: right;
+}
+.color-acent{
+  color: @acento;
+}
+.uppercase{
+  text-transform: uppercase;
+}
+.no-padding{
+  padding: 0!important;
+}
+.alpha{
+  padding-left: 0;
+}
+.omega{
+  padding-right: 0;
+}
+
+/*******
+	mixins
+********/
+
+
+.rounded(@radius: 2px) {
+  -webkit-border-radius: @radius;
+  -moz-border-radius: @radius;
+  border-radius: @radius;
+}
+.transition(@duration:0.2s, @ease:ease-out) {
+  -webkit-transition: all @duration @ease;
+  -moz-transition: all @duration @ease;
+  -o-transition: all @duration @ease;
+  transition: all @duration @ease;
+}
+
+
+
+
